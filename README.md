@@ -1,4 +1,6 @@
 # curve-fitting-assignment
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Tanish06122004/curve-fitting-assignment/blob/main/Untitled0.ipynb)
 Assignment for RandD / AI internship
 estimate the unknowns theta, M, X
 x(t)=tcosθ−eM∣t∣sin(0.3t)sinθ+X,
@@ -21,4 +23,31 @@ Use the observed points directly as the sampling set (if they are uniformly samp
 Or sample predicted curve at uniform t values (e.g. 1000 samples between 6 and 60) and compute L1 sum of Euclidean distances between corresponding points if you have a matching mapping of t to observed points.
 If matching is unknown, compute for each observed point the minimal distance to the predicted curve — but better to recover t for each point.
 
-	​
+ Final Results
+
+Parameter Estimated Value 
+θ (degrees) 29.9183°
+M           0.029925
+X           54.8704
+L1 Score    98.97
+
+
+Final Equation (LaTeX Format)
+
+\[
+(x, y) =
+\left(
+t\cos(0.52307)
+- e^{0.029925|t|}\sin(0.3t)\sin(0.52307)
++ 54.8704,\;
+42 + t\sin(0.52307)
++ e^{0.029925|t|}\sin(0.3t)\cos(0.52307)
+\right)
+\]
+
+---
+
+Visualization
+
+The fitted curve closely follows the observed data points, confirming accurate parameter estimation.
+
